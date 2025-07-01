@@ -1,0 +1,32 @@
+{
+  "name": "event-management",
+  "version": "1.0.0",
+  "description": "Creating an Event management website that allows users to browse, create, and register for events. Admins can manage events.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subixsh04/Event-Management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/subixsh04/Event-Management/issues"
+  },
+  "homepage": "https://github.com/subixsh04/Event-Management#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
