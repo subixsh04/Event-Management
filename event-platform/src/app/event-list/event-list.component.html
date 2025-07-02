@@ -1,1 +1,12 @@
-<p>event-list works!</p>
+<div class="event-list-container">
+    <h2> Upcoming events!</h2>
+
+    <div *ngFor="let event of events" class="event-card">
+        <h3> {{event.title}} </h3>
+        <p><strong>Date:</strong> {{event.date}}</p>
+        <p><strong>Location:</strong> {{event.Location}}</p>
+        <p> {{event.description}} </p>
+        <a [routerLink]="['/event', event.id]" class="view-details">View Details</a>
+    </div>
+
+</div>
