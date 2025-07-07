@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-event-list',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './event-list.component.html',
   styleUrl: './event-list.component.css'
 })
@@ -17,7 +17,7 @@ export class EventListComponent {
 
 constructor() { }
 
-ngOnit(): void {
+ngOnInit(): void {
 
 }
 
