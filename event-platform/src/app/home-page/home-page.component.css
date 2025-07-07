@@ -1,0 +1,15 @@
+.home-container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.browse-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+    
