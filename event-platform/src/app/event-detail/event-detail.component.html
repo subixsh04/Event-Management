@@ -1,6 +1,12 @@
-<div *ngIf="event">
+<div *ngIf="event" class="event-detail-container">
+  <img [src]="event.image" alt="{{ event.title }}" class="banner-image" />
+
+  <div class="event-detail-content">
     <h2>{{ event.title }}</h2>
-    <p><strong>Date:</strong> {{ event.date }}</p>
-    <p><strong>Location:</strong> {{ event.location }}</p>
+    <p><span class="label">Date:</span> {{ event.date }}</p>
+    <p><span class="label">Location:</span> {{ event.location }}</p>
     <p>{{ event.description }}</p>
+
+    <button class="rsvp-button" (click)="onRSVP()">RSVP</button>
+  </div>
 </div>

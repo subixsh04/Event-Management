@@ -1,0 +1,66 @@
+.event-detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.banner-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.event-detail-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-detail-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-detail-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.event-detail-content .label {
+  font-weight: bold;
+  display: inline-block;
+  width: 80px;
+}
+
+.rsvp-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.rsvp-button:hover {
+  background-color: #444;
+}
+
+@media (max-width: 600px) {
+  .event-detail-content {
+    padding: 20px;
+  }
+
+  .rsvp-button {
+    width: 100%;
+    text-align: center;
+  }
+}
