@@ -10,6 +10,8 @@ export const routes: Routes = [
     {path: 'events', component: EventListComponent},
     {path: 'event/:id', component: EventDetailComponent},
     {path: 'login', component: LoginComponent},
-    {path: 'admin', component: AdminDashboardComponent},
+    {path: 'admin', component: AdminDashboardComponent, children: [{ path: '', redirectTo: 'events', pathMatch: 'full' },
+    { path: 'events', loadComponent: () => import('./admin/event-management/event-management.component').then(m => m.EventManagementComponent) },
+    { path: 'users', loadComponent: () => import('./admin/user-management/user-management.component').then(m => m.UserManagementComponent) }]},
     { path: '**', redirectTo: '' }
 ];
